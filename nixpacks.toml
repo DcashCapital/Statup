@@ -1,0 +1,9 @@
+[phases.install]
+dependsOn = ['setup']
+cmds = ['python3 -m venv /opt/venv && /opt/venv/bin/pip install -r requirements.txt']
+
+[phases.setup]
+pkgs = ['python3', 'gcc']
+
+[start]
+cmd = 'streamlit run main.py --server.port 8501'
