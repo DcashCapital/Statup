@@ -6,4 +6,4 @@ cmds = ['python3 -m venv /opt/venv && /opt/venv/bin/pip install -r requirements.
 pkgs = ['python3', 'gcc']
 
 [start]
-cmd = 'streamlit run main.py --server.port 8501'
+cmd = 'streamlit run main.py --server.port 3000'
